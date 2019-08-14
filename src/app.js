@@ -10,7 +10,9 @@ const ExpenseDashboardPage = () => (
 );
 const routes = (
   <BrowserRouter>
-    <Route path="/" component={ExpenseDashboardPage}/>
+    <div>
+      <Route path="/" component={ExpenseDashboardPage} />
+    </div>
   </BrowserRouter>
 );
 ReactDOM.render(routes, document.getElementById('app'));
