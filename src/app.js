@@ -11,11 +11,19 @@ const ExpenseDashboardPage = () => (
 const AddExpensePage = () => (
   <div>This is from my add expense page</div>
 );
+const EditExpensePage = () => (
+  <div>This is from my edit expense page</div>
+);
+const HelpPage = () => (
+  <div>This is from my help expense page</div>
+);
 const routes = (
   <BrowserRouter>
     <div>
-      <Route path="/" component={ExpenseDashboardPage} />
-      <Route path="/create" component={AddExpensePage} />
+      <Route path="/" component={ExpenseDashboardPage} exact={true} />
+      <Route path="/create" component={AddExpensePage} exact={true} />
+      <Route path="/edit" component={EditExpensePage} exact={true} />
+      <Route path="/help" component={HelpPage} exact={true} />
     </div>
   </BrowserRouter>
 );
