@@ -9,7 +9,7 @@ const ExpenseDashboardPage = () => (
   <div>This is from my dashboard component</div>
 );
 const AddExpensePage = () => (
-  <div>This is from my dashboard component</div>
+  <div>This is from my add expense page</div>
 );
 const routes = (
   <BrowserRouter>
