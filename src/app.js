@@ -9,19 +9,10 @@ import { setEndDate, setStartDate, sortByAmount, sortByDate, setTextFilter } fro
 import getVisibleExpenses from './selectors/expenses';
 
 import 'normalize.css/normalize.css';
+import 'react-dates/lib/css/_datepicker.css';
 import './styles/styles.scss';
 
 const store = configureStore();
-
-store.subscribe(() => {
-  const state = store.getState();
-  const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-  console.log(visibleExpenses);
-});
-
-store.dispatch(addExpense({description: 'water bill', amount: 200}));
-store.dispatch(addExpense({ description: 'gas bill', amount: 543, createdAt: 1000 }));
-store.dispatch(addExpense({ description: 'electric bill', amount: 54113 }));
 
 const jsx = (
   <Provider store={store}>
