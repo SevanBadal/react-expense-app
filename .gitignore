@@ -3,3 +3,7 @@ dist
 /node_modules
 yarn-error.log
 /src/playground
+public/bundle.js
+public/bundle.js.map
+public/styles.css
+public/styles.css.map
