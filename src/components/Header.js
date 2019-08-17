@@ -8,7 +8,9 @@ const Header = () => (
         <Link className="header__title" to="/" exact={true}>
           <h1>Expense App</h1>
         </Link>
-        <Link className="button" id="git" to="https://github.com/SevanBadal">My github</Link>
+        <a href="https://github.com/SevanBadal" target="_blank">
+          <i id="git" className="button fab fa-github-square"></i>
+        </a>
       </div>
     </div>
   </header>
