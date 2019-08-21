@@ -1,5 +1,5 @@
 # react-expense-app
-> Create, read, edit and delete expense componenets.
+> Create, read, edit and delete expense components.
 
 ![](header.gif)
 
